@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddressMaxLength" xml:space="preserve">
+    <value>Adres 200 karakterden uzun olamaz.</value>
+  </data>
+  <data name="AddressRequired" xml:space="preserve">
+    <value>Adres zorunludur.</value>
+  </data>
+  <data name="BenefitsMaxLength" xml:space="preserve">
+    <value>Yan haklar 200 karakterden uzun olamaz.</value>
+  </data>
+  <data name="CompanyNameMaxLength" xml:space="preserve">
+    <value>Şirket adı 100 karakterden uzun olamaz.</value>
+  </data>
+  <data name="CompanyNameRequired" xml:space="preserve">
+    <value>Şirket adı zorunludur.</value>
+  </data>
+  <data name="CompanyNotFound" xml:space="preserve">
+    <value>Şirket bulunamadı.</value>
+  </data>
+  <data name="DescriptionMaxLength" xml:space="preserve">
+    <value>Açıklama 1000 karakterden uzun olamaz.</value>
+  </data>
+  <data name="DescriptionMinLength" xml:space="preserve">
+    <value>Açıklama en az 10 karakter olmalıdır.</value>
+  </data>
+  <data name="DescriptionRequired" xml:space="preserve">
+    <value>Açıklama zorunludur.</value>
+  </data>
+  <data name="EmailAlreadyExists" xml:space="preserve">
+    <value>Bu e-posta ile kayıtlı bir kullanıcı zaten var.</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>E-posta adresi zorunludur.</value>
+  </data>
+  <data name="EmploymentTypeMaxLength" xml:space="preserve">
+    <value>Çalışma türü 50 karakterden uzun olamaz.</value>
+  </data>
+  <data name="ExpirationDateFuture" xml:space="preserve">
+    <value>İlan bitiş tarihi gelecekte olmalıdır.</value>
+  </data>
+  <data name="InvalidEmailFormat" xml:space="preserve">
+    <value>Geçersiz e-posta formatı.</value>
+  </data>
+  <data name="InvalidEmailOrPassword" xml:space="preserve">
+    <value>Geçersiz e-posta veya şifre.</value>
+  </data>
+  <data name="InvalidPhoneNumberFormat" xml:space="preserve">
+    <value>Geçersiz telefon numarası formatı.</value>
+  </data>
+  <data name="JobCreatedFailedElasticsearch" xml:space="preserve">
+    <value>İş ilanı oluşturuldu, ancak Elasticsearch'e eklenemedi.</value>
+  </data>
+  <data name="JobCreatedSuccessfully" xml:space="preserve">
+    <value>İş ilanı başarıyla oluşturuldu ve Elasticsearch'e eklendi.</value>
+  </data>
+  <data name="JobDeletedSuccessfully" xml:space="preserve">
+    <value>İş ilanı başarıyla silindi.</value>
+  </data>
+  <data name="JobNotFound" xml:space="preserve">
+    <value>İlan bulunamadı.</value>
+  </data>
+  <data name="JobPostingLimitExceeded" xml:space="preserve">
+    <value>İş ilanı yayınlama limiti aşıldı.</value>
+  </data>
+  <data name="JobPostingLimitGreaterThan" xml:space="preserve">
+    <value>İş ilanı limiti 0'dan büyük olmalıdır.</value>
+  </data>
+  <data name="JobRetrievedSuccessfully" xml:space="preserve">
+    <value>İş ilanı başarıyla getirildi.</value>
+  </data>
+  <data name="JobsFound" xml:space="preserve">
+    <value>İş ilanları bulundu.</value>
+  </data>
+  <data name="JobsRetrievedSuccessfully" xml:space="preserve">
+    <value>İş ilanları başarıyla getirildi.</value>
+  </data>
+  <data name="JobUpdatedFailedElasticsearch" xml:space="preserve">
+    <value>İş ilanı güncellendi, ancak Elasticsearch'te güncellenemedi.</value>
+  </data>
+  <data name="JobUpdatedSuccessfully" xml:space="preserve">
+    <value>İş ilanı başarıyla güncellendi ve Elasticsearch'te güncellendi.</value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>Giriş başarılı.</value>
+  </data>
+  <data name="NoJobsFound" xml:space="preserve">
+    <value>İş ilanı bulunamadı.</value>
+  </data>
+  <data name="OperationFailed" xml:space="preserve">
+    <value>İşlem sırasında hata oluştu</value>
+  </data>
+  <data name="OperationSuccess" xml:space="preserve">
+    <value>İşlem başarılı</value>
+  </data>
+  <data name="PasswordResetSuccess" xml:space="preserve">
+    <value>Şifre başarıyla yenilendi.</value>
+  </data>
+  <data name="PasswordsDoNotMatch" xml:space="preserve">
+    <value>Şifreler eşleşmiyor.</value>
+  </data>
+  <data name="PhoneNumberRequired" xml:space="preserve">
+    <value>Telefon numarası zorunludur.</value>
+  </data>
+  <data name="PositionMaxLength" xml:space="preserve">
+    <value>Pozisyon adı 100 karakterden uzun olamaz.</value>
+  </data>
+  <data name="PositionRequired" xml:space="preserve">
+    <value>Pozisyon adı zorunludur.</value>
+  </data>
+  <data name="QualityScoreRange" xml:space="preserve">
+    <value>Kalite skoru 0 ile 5 arasında olmalıdır.</value>
+  </data>
+  <data name="RestrictedWordAddedSuccessfully" xml:space="preserve">
+    <value>Sakıncalı kelime başarıyla eklendi.</value>
+  </data>
+  <data name="RestrictedWordInDescription" xml:space="preserve">
+    <value>İlan açıklaması sakıncalı kelime içeriyor: {word}.</value>
+  </data>
+  <data name="RestrictedWordRemovedSuccessfully" xml:space="preserve">
+    <value>Sakıncalı kelime başarıyla silindi.</value>
+  </data>
+  <data name="RestrictedWordsRetrieved" xml:space="preserve">
+    <value>Sakıncalı kelimeler başarıyla getirildi.</value>
+  </data>
+  <data name="UserDeletedSuccess" xml:space="preserve">
+    <value>Kullanıcı başarıyla silindi.</value>
+  </data>
+  <data name="UserNameMaxLength" xml:space="preserve">
+    <value>Kullanıcı adı 100 karakterden uzun olamaz.</value>
+  </data>
+  <data name="UserNameRequired" xml:space="preserve">
+    <value>Kullanıcı adı zorunludur.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Kullanıcı bulunamadı.</value>
+  </data>
+  <data name="UserRegisteredSuccess" xml:space="preserve">
+    <value>Kullanıcı başarıyla kayıt edildi.</value>
+  </data>
+  <data name="UsersRetrievedSuccess" xml:space="preserve">
+    <value>Kullanıcılar başarıyla getirildi.</value>
+  </data>
+</root>
