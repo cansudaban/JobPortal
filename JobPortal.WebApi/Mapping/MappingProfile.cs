@@ -11,6 +11,9 @@ namespace JobPortal.WebApi.Mapping
         public MappingProfile()
         {
             CreateMap<Company, CompanyDto>().ReverseMap();
+            CreateMap<Company, CompanyCreateDto>().ReverseMap();
+            CreateMap<Company, CompanyUpdateDto>().ReverseMap();
+
             CreateMap<Job, JobDto>().ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();
         }

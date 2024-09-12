@@ -1,7 +1,12 @@
 version: '3.8'
+
+networks:
+  app_network:
+    driver: bridge
+
 services:
   postgres:
-    image: postgres:14
+    image: postgres:latest
     container_name: postgres_db
     restart: always
     environment:
@@ -12,6 +17,8 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app_network
 
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
@@ -22,17 +29,10 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
+    networks:
+      - app_network
     volumes:
       - elasticsearch_data:/usr/share/elasticsearch/data
-
-  kibana:
-    image: docker.elastic.co/kibana/kibana:7.10.1
-    container_name: kibana
-    ports:
-      - "5601:5601"
-    environment:
-      ELASTICSEARCH_URL: http://elasticsearch:9200
-      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
 
   redis:
     image: redis:alpine
@@ -41,6 +41,19 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
+    networks:
+      - app_network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.1
+    container_name: kibana
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - app_network
 
   api:
     build:
@@ -49,15 +62,17 @@ services:
     container_name: jobportal_api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=postgres_db;Database=JobPortalDb;Username=jobportaldbuser;Password=35S_Ith??h3trEs8ucr@
+      - ConnectionStrings__DefaultConnection=Host=postgres_db;Port=5432;Database=JobPortalDb;Username=jobportaldbuser;Password=35S_Ith??h3trEs8ucr@
       - ElasticSearch__Uri=http://elasticsearch:9200
-      - Redis__Host=redis
+      - Redis__ConnectionString=redis:6379
     ports:
       - "5000:80"
     depends_on:
       - postgres
       - elasticsearch
       - redis
+    networks:
+      - app_network
 
 volumes:
   postgres_data:

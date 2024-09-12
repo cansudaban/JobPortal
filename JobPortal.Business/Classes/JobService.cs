@@ -16,7 +16,7 @@ namespace JobPortal.Business.Classes
         private readonly IUnitOfWork _unitOfWork;
         private readonly IGenericRepository<Job> _jobRepo;
         private readonly ICompanyService _companyService;
-        private readonly ICacheService _cacheService;
+        private readonly IRestrictedWordService _cacheService;
         private readonly IMapper _mapper;
         private readonly Nest.IElasticClient _elasticClient;
 
@@ -24,7 +24,7 @@ namespace JobPortal.Business.Classes
             IUnitOfWork unitOfWork,
             IMapper mapper,
             ICompanyService companyService,
-            ICacheService cacheService,
+            IRestrictedWordService cacheService,
             ElasticSearchService elasticSearchService)
         {
             _unitOfWork = unitOfWork;

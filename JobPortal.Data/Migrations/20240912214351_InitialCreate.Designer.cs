@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace JobPortal.Data.Migrations
 {
     [DbContext(typeof(JobPortalDbContext))]
-    [Migration("20240911140442_InitialCreate")]
+    [Migration("20240912214351_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -78,7 +78,7 @@ namespace JobPortal.Data.Migrations
                         {
                             Id = 1,
                             Address = "Company Address",
-                            CreatedDate = new DateTime(2024, 9, 11, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5398),
+                            CreatedDate = new DateTime(2024, 9, 12, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5733),
                             CreatedUserId = 1,
                             IsDeleted = false,
                             JobPostingLimit = 10,
@@ -158,10 +158,10 @@ namespace JobPortal.Data.Migrations
                         {
                             Id = 1,
                             CompanyId = 1,
-                            CreatedDate = new DateTime(2024, 9, 11, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5464),
+                            CreatedDate = new DateTime(2024, 9, 12, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5794),
                             CreatedUserId = 1,
                             Description = "Looking for an experienced software engineer.",
-                            ExpirationDate = new DateTime(2024, 9, 26, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5461),
+                            ExpirationDate = new DateTime(2024, 9, 27, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5792),
                             IsDeleted = false,
                             Position = "Software Engineer",
                             QualityScore = 5,
@@ -225,12 +225,12 @@ namespace JobPortal.Data.Migrations
                         {
                             Id = 1,
                             Address = "Admin Address",
-                            CreatedDate = new DateTime(2024, 9, 11, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5068),
+                            CreatedDate = new DateTime(2024, 9, 12, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5490),
                             CreatedUserId = 0,
                             Email = "admin@example.com",
                             IsDeleted = false,
                             Name = "Admin User",
-                            Password = "AQAAAAIAAYagAAAAEC890ZSyzC9UfSeD73E9LavFBxPm8M0Q4QZk2cGVlNkwmgyvRIqi5B+FYiMJIle4YQ==",
+                            Password = "AQAAAAIAAYagAAAAECoT7ucG7vdvj12QeHDxE4YhxmysDc3eCKelYJ1p7uR43iN37xwWcGYVlznsz3sOdw==",
                             PhoneNumber = "+123456789"
                         });
                 });

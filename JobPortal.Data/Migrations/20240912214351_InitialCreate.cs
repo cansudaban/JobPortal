@@ -102,17 +102,17 @@ namespace JobPortal.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Companies",
                 columns: new[] { "Id", "Address", "CreatedDate", "CreatedUserId", "DeletedDate", "DeletedUserId", "IsDeleted", "JobPostingLimit", "Name", "PhoneNumber", "UpdatedDate", "UpdatedUserId" },
-                values: new object[] { 1, "Company Address", new DateTime(2024, 9, 11, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5398), 1, null, null, false, 10, "Example Company", "+987654321", null, null });
+                values: new object[] { 1, "Company Address", new DateTime(2024, 9, 12, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5733), 1, null, null, false, 10, "Example Company", "+987654321", null, null });
 
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "Address", "CreatedDate", "CreatedUserId", "DeletedDate", "DeletedUserId", "Email", "IsDeleted", "Name", "Password", "PhoneNumber", "UpdatedDate", "UpdatedUserId" },
-                values: new object[] { 1, "Admin Address", new DateTime(2024, 9, 11, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5068), 0, null, null, "admin@example.com", false, "Admin User", "AQAAAAIAAYagAAAAEC890ZSyzC9UfSeD73E9LavFBxPm8M0Q4QZk2cGVlNkwmgyvRIqi5B+FYiMJIle4YQ==", "+123456789", null, null });
+                values: new object[] { 1, "Admin Address", new DateTime(2024, 9, 12, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5490), 0, null, null, "admin@example.com", false, "Admin User", "AQAAAAIAAYagAAAAECoT7ucG7vdvj12QeHDxE4YhxmysDc3eCKelYJ1p7uR43iN37xwWcGYVlznsz3sOdw==", "+123456789", null, null });
 
             migrationBuilder.InsertData(
                 table: "Jobs",
                 columns: new[] { "Id", "Benefits", "CompanyId", "CreatedDate", "CreatedUserId", "DeletedDate", "DeletedUserId", "Description", "EmploymentType", "ExpirationDate", "IsDeleted", "Position", "QualityScore", "Salary", "UpdatedDate", "UpdatedUserId", "UserId" },
-                values: new object[] { 1, null, 1, new DateTime(2024, 9, 11, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5464), 1, null, null, "Looking for an experienced software engineer.", null, new DateTime(2024, 9, 26, 14, 4, 42, 175, DateTimeKind.Utc).AddTicks(5461), false, "Software Engineer", 5, null, null, null, 1 });
+                values: new object[] { 1, null, 1, new DateTime(2024, 9, 12, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5794), 1, null, null, "Looking for an experienced software engineer.", null, new DateTime(2024, 9, 27, 21, 43, 51, 842, DateTimeKind.Utc).AddTicks(5792), false, "Software Engineer", 5, null, null, null, 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Jobs_CompanyId",

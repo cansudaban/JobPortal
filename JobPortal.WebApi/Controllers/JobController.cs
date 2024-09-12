@@ -14,9 +14,9 @@ namespace JobPortal.WebApi.Controllers
     public class JobController : ControllerBase
     {
         private readonly IJobService _jobService;
-        private readonly ICacheService _cacheService;
+        private readonly IRestrictedWordService _cacheService;
 
-        public JobController(IJobService jobService, ICacheService cacheService)
+        public JobController(IJobService jobService, IRestrictedWordService cacheService)
         {
             _jobService = jobService;
             _cacheService = cacheService;
